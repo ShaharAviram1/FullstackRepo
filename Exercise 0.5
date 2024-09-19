@@ -1,0 +1,11 @@
+sequenceDiagram
+    Browser->>+Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    Server-->>-Browser: 201 created
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    Server-->>-Browser: HTML document
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server-->>-Browser: CSS file
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    Server-->>-Browser: the javascript file
+    Browser->>+Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server-->>-Browser: */*
